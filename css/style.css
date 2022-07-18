@@ -317,6 +317,233 @@ body{
 
 /*fim da galeria*/
 
+/*comeco da price*/
+
+
+.price .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(25rem,1fr));
+    gap: 2rem;
+
+}
+
+.price .box-container .box{
+    padding: 2rem 0;
+    background:#333;
+    border-radius: 0.5rem;
+    text-align: center;
+
+}
+
+.price .box-container .box:hover{
+    transform: scale(1.03);
+}
+
+.price .box-container .box .title{
+   
+    background:var(--main-color);
+    color: #fff;
+    padding: 1.5rem 0;
+    font-size: 2rem;
+}
+
+.price .box-container .box .amount{
+   
+    color: #fff;
+    padding-top:2rem;
+    font-size: 3rem;
+}
+
+.price .box-container .box ul{
+    list-style-type: none;
+    padding: 1rem 0;
+}
+
+.price .box-container .box ul li{
+    font-size: 1.5rem;
+    color: #eee;
+    padding: 1rem 0;
+}
+
+.price .box-container .box ul li i{
+    color: var(--main-color);
+}
+
+
+
+
+/*fim da price*/
+
+/*comeco da review*/
+
+.review .box{
+    border-radius: 0.5rem;
+    background: #333;
+    padding: 2rem;
+    position: relative;
+}
+
+.review .box .fa-quote-right{
+    position:absolute;
+    top:2rem;right: 2rem;
+    color: var(--main-color);
+    font: 3rem;
+}
+
+.review .box .user{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding-bottom: 1rem;
+}
+
+.review .box .user img{
+    height: 5rem;
+    width: 5rem;
+    border-radius: 0.5rem;
+    object-fit: cover;    
+}
+
+.review .box .user h3{
+    font-size: 2rem;
+    color: #fff;
+}
+.review .box .user span{
+    font-size: 1.5rem;
+    color: #eee;
+}
+
+.review .box p{
+    line-height: 2;
+    color: #eee;
+    padding: 0.5rem 0 ;
+    font-size: 1.5rem;
+}
+
+/*fim da review*/
+
+
+/*comeco da contatos*/
+.contact form{
+    padding:2rem;
+    background: #333;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5 1rem rgba(0,0,0,0.9);
+    text-align: center;
+}
+
+.contact form .inputBox{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+
+.contact form .inputBox input, .contact form textarea{
+    border: 0.1rem solid rgba(0,0,0,0.1);
+    font-size: 1.5rem;
+    padding: 1rem;
+    margin: 1rem 0;
+    text-transform: none;
+    color: #333;
+
+}
+.contact form .inputBox input{
+    width: 49%;
+}
+
+.contact textarea{
+    height:15rem;
+    width: 100%;
+    resize: none;
+    
+}
+
+.contact form .inputBox input::placeholder,
+ .contact form textarea::placeholder{
+    text-transform: none;
+ }
+
+ .contact form .inputBox input:focus,
+ .contact form textarea:focus{
+   border-color:var(--main-color);
+ }
+
+ /*fim da contatos*/
+
+
+
+ .footer{
+    background-color: #333;
+}
+.footer .box-container {
+    display: flex;
+    grid-template-columns: repeat(auto-fit,minmax(30rem,1fr));
+    gap: 1.5rem;
+    justify-content: space-around;
+   
+}
+
+.footer .box-container .box{
+    font-size: 1.3rem;
+    color: #333;
+    padding: 1rem 0;
+}
+
+
+.footer .box-container .box a{
+    display: block;
+    font-size: 2rem;
+    color: var(--main-color);
+    padding: 1rem 0;
+}
+
+.footer .box-container .box a i{
+    color: var(--main-color);
+    padding-right: 0.5rem;
+}
+
+
+.footer .box-container .box a:hover i{
+    color: var(--main-color);
+    padding-right: 0.5rem;
+}
+
+.footer .share a{
+    height: 4rem;
+    width: 4rem;
+    line-height: 4rem;
+    font-size: 3rem;
+    color: #fff;
+    background-color:#333;
+    margin: 0 0.3rem;
+    border-radius: 50%;
+    margin-top: 1.5rem;
+    
+   
+    
+}
+
+.footer .share a:hover{
+    background:#666;
+}
+
+.footer .share {
+    padding: 1rem 0;
+    text-align: center;
+    
+    
+}
+
+.footer .share h3{
+    font-size: 3rem;
+    color: #fff;
+}
+
+.footer .box-container h3{
+    font-size: 3rem;
+    color: #fff;
+}
 
 
 
