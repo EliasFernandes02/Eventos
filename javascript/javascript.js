@@ -13,6 +13,28 @@ menu.onclick = () =>{
     navbar.classList.remove('active');
 }
 
+
+let themeToggler = document.querySelector('.theme-toggler');
+let toggleBtn = document.querySelector('.toggle-btn');
+
+toggleBtn.onclick = () => {
+  themeToggler.classList.toggle('active');
+}
+
+window.onscroll = () => {
+  themeToggler.classList.remove('active');
+}
+
+document.querySelectorAll('.theme-toggler .theme-btn').forEach(btn =>{
+
+  btn.onclick =() =>{
+  let color = btn.getElementsByClassName.background;
+  document.querySelector(':root').style.setProperty('--main-color',color);
+}
+
+});
+
+
 var swiper = new Swiper(".home-slider", {
     spaceBetween:20,
     grabCursos:true,
